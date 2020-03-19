@@ -26,11 +26,11 @@ USE Dispatcher
 CREATE TABLE [Accounts](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,	
 	[AccountNumber] [bigint] NOT NULL,	
-	[Address] [varchar](256) NULL,
-	[FIO] [varchar](256) NULL,
-	[Comment] [varchar](256) NULL,	
-	[PhoneNumber] [varchar](256) NULL,
-	[E-Mail] [varchar](256) NULL
+	[Address] [nvarchar](256) NULL,
+	[FIO] [nvarchar](256) NULL,
+	[Comment] [nvarchar](256) NULL,	
+	[PhoneNumber] [nvarchar](100) NULL,
+	[E-Mail] [nvarchar](256) NULL
 ) ON [PRIMARY]
 GO
 
@@ -38,13 +38,13 @@ GO
 CREATE TABLE [Requests](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
 	[RequestNumber] [int] NOT NULL,
-	[RequestDate] [datetime] NOT NULL,
+	[RequestDate] [datetime2] NOT NULL,
 	[AccountID] [int] NOT NULL,
 	[StatusID] [int] NULL,
 	[Autor]  [int] NULL,
 	[Performer] [int] NULL,
 	[CategoryID] [int] NULL,
-	[Content] [varchar](1000) NULL
+	[Content] [nvarchar](1000) NULL
 	) ON [PRIMARY]
 GO
 
@@ -52,23 +52,23 @@ GO
 CREATE TABLE [Staff](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
 	[INN] [int] NOT NULL,
-	[FIO] [varchar](256) NOT NULL,
-	[Position] [varchar](256) NULL,
-	[PhoneNumber] [varchar](50) NULL
+	[FIO] [nvarchar](256) NOT NULL,
+	[Position] [nvarchar](256) NULL,
+	[PhoneNumber] [nvarchar](100) NULL
 	) ON [PRIMARY]
 GO
 
 -- Статусы заявок
 CREATE TABLE [Statuses](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[StatusName] [varchar](50) NULL
+	[StatusName] [nvarchar](50) NULL
 	) ON [PRIMARY]
 GO
 
 -- Категории заявок
 CREATE TABLE [Category](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[Category] [varchar](100) NULL,
+	[Category] [nvarchar](100) NULL,
     [ExecutionPeriod] int NULL
 	) ON [PRIMARY]
 GO
