@@ -1,0 +1,6 @@
+f:\SQL\otus-mssql-2020-02\otus-mssql-2020-02_Tsatskina\HW11 - clr\Project\CLR for SQL Server\CLR for SQL Server\bin\Debug\CLR for SQL Server.dll.config
+f:\SQL\otus-mssql-2020-02\otus-mssql-2020-02_Tsatskina\HW11 - clr\Project\CLR for SQL Server\CLR for SQL Server\bin\Debug\CLR for SQL Server.dll
+f:\SQL\otus-mssql-2020-02\otus-mssql-2020-02_Tsatskina\HW11 - clr\Project\CLR for SQL Server\CLR for SQL Server\bin\Debug\CLR for SQL Server.pdb
+f:\SQL\otus-mssql-2020-02\otus-mssql-2020-02_Tsatskina\HW11 - clr\Project\CLR for SQL Server\CLR for SQL Server\obj\Debug\CLR for SQL Server.csprojAssemblyReference.cache
+f:\SQL\otus-mssql-2020-02\otus-mssql-2020-02_Tsatskina\HW11 - clr\Project\CLR for SQL Server\CLR for SQL Server\obj\Debug\CLR for SQL Server.dll
+f:\SQL\otus-mssql-2020-02\otus-mssql-2020-02_Tsatskina\HW11 - clr\Project\CLR for SQL Server\CLR for SQL Server\obj\Debug\CLR for SQL Server.pdb
