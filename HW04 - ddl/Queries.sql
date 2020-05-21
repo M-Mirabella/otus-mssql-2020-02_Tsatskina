@@ -27,6 +27,7 @@ CREATE TABLE [Accounts](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,	
 	[AccountNumber] [bigint] NOT NULL,	
 	[Address] [nvarchar](256) NULL,
+	[DistrictID] [int] NULL,
 	[FIO] [nvarchar](256) NULL,
 	[Comment] [nvarchar](256) NULL,	
 	[PhoneNumber] [nvarchar](100) NULL,
@@ -42,15 +43,17 @@ CREATE TABLE [Requests](
 	[AccountID] [int] NOT NULL,
 	[StatusID] [int] NULL,
 	[Autor]  [int] NULL,
-	[Performer] [int] NULL,
+	[TeamID] [int] NULL,
 	[CategoryID] [int] NULL,
-	[Content] [nvarchar](1000) NULL
+	[RequestContent] [nvarchar](1000) NULL,
+	[ExecuteBefore] [datetime2]
 	) ON [PRIMARY]
 GO
 
 -- Сотрудники
 CREATE TABLE [Staff](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
+	[TeamID] [int] NULL,
 	[INN] [int] NOT NULL,
 	[FIO] [nvarchar](256) NOT NULL,
 	[Position] [nvarchar](256) NULL,
@@ -66,10 +69,25 @@ CREATE TABLE [Statuses](
 GO
 
 -- Категории заявок
-CREATE TABLE [Category](
+CREATE TABLE [Categories](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[Category] [nvarchar](100) NULL,
+	[CategoryName] [nvarchar](100) NULL,
     [ExecutionPeriod] int NULL
+	) ON [PRIMARY]
+GO
+
+-- Районы
+CREATE TABLE [Districts](
+	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
+	[DistrictName] [nvarchar](100) NULL
+	) ON [PRIMARY]
+GO
+
+-- Категории заявок
+CREATE TABLE [Teams](
+	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
+	[TeamName] [nvarchar](100) NULL,
+    [DistrictID] int NULL
 	) ON [PRIMARY]
 GO
 
@@ -87,8 +105,8 @@ ON UPDATE CASCADE
 ALTER TABLE Requests ADD CONSTRAINT FK_r_Autor FOREIGN KEY(Autor)
 REFERENCES Staff (id)
 
-ALTER TABLE Requests ADD CONSTRAINT FK_r_Performer FOREIGN KEY(Performer)
-REFERENCES Staff (id)
+ALTER TABLE Requests ADD CONSTRAINT FK_r_Team FOREIGN KEY(TeamID)
+REFERENCES Teams (id)
 
 ALTER TABLE Requests ADD CONSTRAINT FK_r_Category FOREIGN KEY(CategoryID)
 REFERENCES Category (id)
