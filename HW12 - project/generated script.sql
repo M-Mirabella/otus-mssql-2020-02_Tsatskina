@@ -1,0 +1,166 @@
+CREATE TABLE [Accounts] (
+	ID int NOT NULL,
+	AccountNumber bigint NOT NULL,
+	Address nvarchar(256),
+	DistrictID int(256),
+	FIO nvarchar(256) NOT NULL,
+	Comment nvarchar(256),
+	PhoneNumber nvarchar(100),
+	E-mail nvarchar(256),
+  CONSTRAINT [PK_ACCOUNTS] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Districts] (
+	ID int NOT NULL,
+	DistrictName nvarchar(100) NOT NULL,
+  CONSTRAINT [PK_DISTRICTS] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Teams] (
+	ID int NOT NULL,
+	TeamName nvarchar(100) NOT NULL,
+	DistrictID int,
+  CONSTRAINT [PK_TEAMS] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Categories] (
+	ID int NOT NULL,
+	CategoryName nvarchar(100) NOT NULL,
+	ExecutionPeriod int NOT NULL,
+  CONSTRAINT [PK_CATEGORIES] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Statuses] (
+	ID int NOT NULL,
+	StatusName nvarchar(50) NOT NULL,
+  CONSTRAINT [PK_STATUSES] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Staff] (
+	ID int NOT NULL,
+	TeamID int NOT NULL,
+	INN int NOT NULL,
+	FIO nvarchar(256) NOT NULL,
+	Position nvarchar(256) NOT NULL,
+	PhoneNumber nvarchar(256),
+  CONSTRAINT [PK_STAFF] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [Requests] (
+	ID int NOT NULL,
+	RequestNumber int NOT NULL,
+	RequestDate datetime2 NOT NULL,
+	AccountID int NOT NULL,
+	StatusID int NOT NULL,
+	Autor int NOT NULL,
+	TeamID int NOT NULL,
+	CategoryID int NOT NULL,
+	RequestContent nvarchar(1000) NOT NULL,
+	ExecuteBefore datetime2 NOT NULL,
+  CONSTRAINT [PK_REQUESTS] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+CREATE TABLE [RequestStatuses] (
+	ID int NOT NULL,
+	RequestID int NOT NULL,
+	StatusID int NOT NULL,
+	StatusDate datetime2 NOT NULL,
+	StaffID int NOT NULL,
+	Comment nvarchar(256),
+  CONSTRAINT [PK_REQUESTSTATUSES] PRIMARY KEY CLUSTERED
+  (
+  [ID] ASC
+  ) WITH (IGNORE_DUP_KEY = OFF)
+
+)
+GO
+ALTER TABLE [Accounts] WITH CHECK ADD CONSTRAINT [Accounts_fk0] FOREIGN KEY ([DistrictID]) REFERENCES [Districts]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Accounts] CHECK CONSTRAINT [Accounts_fk0]
+GO
+
+
+ALTER TABLE [Teams] WITH CHECK ADD CONSTRAINT [Teams_fk0] FOREIGN KEY ([DistrictID]) REFERENCES [Districts]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Teams] CHECK CONSTRAINT [Teams_fk0]
+GO
+
+
+
+ALTER TABLE [Staff] WITH CHECK ADD CONSTRAINT [Staff_fk0] FOREIGN KEY ([TeamID]) REFERENCES [Teams]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Staff] CHECK CONSTRAINT [Staff_fk0]
+GO
+
+ALTER TABLE [Requests] WITH CHECK ADD CONSTRAINT [Requests_fk0] FOREIGN KEY ([AccountID]) REFERENCES [Accounts]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Requests] CHECK CONSTRAINT [Requests_fk0]
+GO
+ALTER TABLE [Requests] WITH CHECK ADD CONSTRAINT [Requests_fk1] FOREIGN KEY ([StatusID]) REFERENCES [Statuses]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Requests] CHECK CONSTRAINT [Requests_fk1]
+GO
+ALTER TABLE [Requests] WITH CHECK ADD CONSTRAINT [Requests_fk2] FOREIGN KEY ([Autor]) REFERENCES [Staff]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Requests] CHECK CONSTRAINT [Requests_fk2]
+GO
+ALTER TABLE [Requests] WITH CHECK ADD CONSTRAINT [Requests_fk3] FOREIGN KEY ([TeamID]) REFERENCES [Teams]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Requests] CHECK CONSTRAINT [Requests_fk3]
+GO
+ALTER TABLE [Requests] WITH CHECK ADD CONSTRAINT [Requests_fk4] FOREIGN KEY ([CategoryID]) REFERENCES [Categories]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [Requests] CHECK CONSTRAINT [Requests_fk4]
+GO
+
+ALTER TABLE [RequestStatuses] WITH CHECK ADD CONSTRAINT [RequestStatuses_fk0] FOREIGN KEY ([RequestID]) REFERENCES [Requests]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [RequestStatuses] CHECK CONSTRAINT [RequestStatuses_fk0]
+GO
+ALTER TABLE [RequestStatuses] WITH CHECK ADD CONSTRAINT [RequestStatuses_fk1] FOREIGN KEY ([StatusID]) REFERENCES [Statuses]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [RequestStatuses] CHECK CONSTRAINT [RequestStatuses_fk1]
+GO
+ALTER TABLE [RequestStatuses] WITH CHECK ADD CONSTRAINT [RequestStatuses_fk2] FOREIGN KEY ([StaffID]) REFERENCES [Staff]([ID])
+ON UPDATE CASCADE
+GO
+ALTER TABLE [RequestStatuses] CHECK CONSTRAINT [RequestStatuses_fk2]
+GO

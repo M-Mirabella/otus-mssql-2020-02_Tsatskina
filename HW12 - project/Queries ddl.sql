@@ -12,6 +12,8 @@ DROP TABLE IF EXISTS Statuses
 GO
 DROP TABLE IF EXISTS Teams
 GO
+DROP TABLE IF EXISTS RequestStatuses
+GO
 DROP TABLE IF EXISTS Staff
 GO
 DROP TABLE IF EXISTS Districts
@@ -25,7 +27,7 @@ CREATE TABLE [Accounts](
 	[AccountNumber] [bigint] NOT NULL,	
 	[Address] [nvarchar](256) NULL,
 	[DistrictID] [int] NULL,
-	[FIO] [nvarchar](256) NULL,
+	[FIO] [nvarchar](256) NOT NULL,
 	[Comment] [nvarchar](256) NULL,	
 	[PhoneNumber] [nvarchar](100) NULL,
 	[E-Mail] [nvarchar](256) NULL
@@ -38,12 +40,12 @@ CREATE TABLE [Requests](
 	[RequestNumber] [int] NOT NULL,
 	[RequestDate] [datetime2] NOT NULL,
 	[AccountID] [int] NOT NULL,
-	[StatusID] [int] NULL,
-	[Autor]  [int] NULL,
-	[TeamID] [int] NULL,
-	[CategoryID] [int] NULL,
+	[StatusID] [int] NOT NULL,
+	[Autor]  [int] NOT NULL,
+	[TeamID] [int] NOT NULL,
+	[CategoryID] [int] NOT NULL,
 	[RequestContent] [nvarchar](1000) NULL,
-	[ExecuteBefore] [datetime2]
+	[ExecuteBefore] [datetime2] NOT NULL
 	) ON [PRIMARY]
 GO
 
@@ -61,31 +63,42 @@ GO
 -- 4. Статусы заявок
 CREATE TABLE [Statuses](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[StatusName] [nvarchar](50) NULL
+	[StatusName] [nvarchar](50) NOT NULL
 	) ON [PRIMARY]
 GO
 
 -- 5. Категории заявок
 CREATE TABLE [Categories](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[CategoryName] [nvarchar](100) NULL,
-    [ExecutionPeriod] int NULL
+	[CategoryName] [nvarchar](100) NOT NULL,
+    [ExecutionPeriod] int NOT NULL
 	) ON [PRIMARY]
 GO
 
 -- 6. Районы (для привязки бригад к адресам)
 CREATE TABLE [Districts](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[DistrictName] [nvarchar](100) NULL
+	[DistrictName] [nvarchar](100) NOT NULL
 	) ON [PRIMARY]
 GO
 
 -- 7. Бригады электромонтеров
 CREATE TABLE [Teams](
 	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
-	[TeamName] [nvarchar](100) NULL,
+	[TeamName] [nvarchar](100) NOT NULL,
     [DistrictID] int NULL
 	) ON [PRIMARY]
+GO
+
+-- 8. Статусы заявок
+CREATE TABLE [RequestStatuses] (
+	ID int IDENTITY(1,1) NOT NULL primary key,
+	RequestID int NOT NULL,
+	StatusID int NOT NULL,
+	StatusDate datetime2 NOT NULL,
+	StaffID int NOT NULL,
+	Comment nvarchar(256)
+	)  ON [PRIMARY]
 GO
 
 -- Создаем внешние ключи
@@ -118,6 +131,13 @@ REFERENCES Teams (id)
 -----
 ALTER TABLE Teams ADD CONSTRAINT FK_Teams_Districts FOREIGN KEY(DistrictID)
 REFERENCES Districts (id)
+
+----- RequestStatuses
+ALTER TABLE RequestStatuses ADD CONSTRAINT FK_RequestStatuses_Statuses FOREIGN KEY(StatusID)
+REFERENCES Statuses (id)
+
+ALTER TABLE RequestStatuses ADD CONSTRAINT FK_RequestStatuses_Requests FOREIGN KEY(RequestID)
+REFERENCES Requests (id)
 
 
 
