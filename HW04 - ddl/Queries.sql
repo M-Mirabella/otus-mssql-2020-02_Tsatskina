@@ -18,6 +18,7 @@ CREATE DATABASE [Dispatcher]
 	SIZE = 8MB , 
 	MAXSIZE = 10GB , 
 	FILEGROWTH = 65536KB )
+COLLATE Cyrillic_General_CI_AS
 GO
 
 -- 2. 3-4 основные таблицы для своего проекта.
