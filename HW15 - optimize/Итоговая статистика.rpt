@@ -1,0 +1,66 @@
+﻿SQL Server parse and compile time: 
+   CPU time = 0 ms, elapsed time = 0 ms.
+
+ SQL Server Execution Times:
+   CPU time = 0 ms,  elapsed time = 0 ms.
+SQL Server parse and compile time: 
+   CPU time = 97 ms, elapsed time = 97 ms.
+
+ SQL Server Execution Times:
+   CPU time = 0 ms,  elapsed time = 0 ms.
+
+ SQL Server Execution Times:
+   CPU time = 0 ms,  elapsed time = 0 ms.
+
+ SQL Server Execution Times:
+   CPU time = 0 ms,  elapsed time = 0 ms.
+Table '#FuncTbl____________________________________________________________________________________________________________0000000A3C32'. Scan count 0, logical reads 469509, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Worktable'. Scan count 0, logical reads 0, physical reads 0, read-ahead reads 3869, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table '#B43CEE2E'. Scan count 1, logical reads 6067, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+
+(138611 rows affected)
+
+(1 row affected)
+
+ SQL Server Execution Times:
+   CPU time = 22031 ms,  elapsed time = 22846 ms.
+Table '#DogsTbl____________________________________________________________________________________________________________0000000A3C33'. Scan count 0, logical reads 26494, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Классификаторы'. Scan count 8637, logical reads 52138, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Категории договоров'. Scan count 8637, logical reads 34706, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Свойства'. Scan count 8716, logical reads 26274, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Организации'. Scan count 0, logical reads 17432, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Договор'. Scan count 0, logical reads 17432, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table '#B5FF6B5A'. Scan count 1, logical reads 38, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+
+(8716 rows affected)
+
+(1 row affected)
+
+ SQL Server Execution Times:
+   CPU time = 750 ms,  elapsed time = 749 ms.
+SQL Server parse and compile time: 
+   CPU time = 422 ms, elapsed time = 426 ms.
+
+(138617 rows affected)
+Table 'Worktable'. Scan count 0, logical reads 0, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Наименования счета'. Scan count 1, logical reads 5, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Документ'. Scan count 1, logical reads 231, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Организации'. Scan count 0, logical reads 2, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Договор'. Scan count 0, logical reads 2, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table '#B5FF6B5A'. Scan count 0, logical reads 2, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Workfile'. Scan count 0, logical reads 0, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table '#FuncTbl____________________________________________________________________________________________________________0000000A3C32'. Scan count 1, logical reads 1373, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table '#DogsTbl____________________________________________________________________________________________________________0000000A3C33'. Scan count 1, logical reads 249, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+Table 'Лицевых аналитики'. Scan count 1, logical reads 3, physical reads 0, read-ahead reads 0, lob logical reads 0, lob physical reads 0, lob read-ahead reads 0.
+
+(1 row affected)
+
+ SQL Server Execution Times:
+   CPU time = 1469 ms,  elapsed time = 2185 ms.
+SQL Server parse and compile time: 
+   CPU time = 0 ms, elapsed time = 0 ms.
+
+ SQL Server Execution Times:
+   CPU time = 0 ms,  elapsed time = 0 ms.
+
+Completion time: 2020-06-17T12:30:16.1504871+03:00
