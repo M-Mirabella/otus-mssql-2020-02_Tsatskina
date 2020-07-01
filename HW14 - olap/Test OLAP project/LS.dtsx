@@ -1,0 +1,643 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2020 1:42:05 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="WS82"
+  DTS:CreatorName="WES\TsatskinaAV"
+  DTS:DTSID="{F38069CC-DB2A-449C-8D58-FB30266B7015}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="1049"
+  DTS:ObjectName="LS"
+  DTS:PackageType="5"
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{3C0D9BC4-3DD0-48F4-8849-832F22C5F623}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BE44B0BC-B257-4989-A181-9CDDAE266796}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACn58AOikh1a6FdmtrrLgUuAAAAAASAAACgAAAAEAAAAB1KG7Cw42DOP3xcp8deLf4QAAAAA0tf8iX1KSr4OZs6drVvhxQAAAC/+6eeGmSFSu5OUSJp3GV/3g7f8A</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0A1A730A-31B7-46C3-A749-9CE3AADDD2C3}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACB/BQSMj2y+/rmx6e4t6o5AAAAAASAAACgAAAAEAAAAL1cMLw6KeRtPEzOmtcnCJkQAAAAiN7BTikKEFqUOZkXGi1XxhQAAAB9GaHJifirRNf5ioiJMrrsFcsj0Q</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{24DF7B7B-CCC9-496F-8EA5-EEE1793F3D7D}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-LS-{24DF7B7B-CCC9-496F-8EA5-EEE1793F3D7D}SQL-SERVER\SQLWES.Stack_Nebraska.sa 2;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAzuW8M6tQn+9VXJXhkh4vqAAAAAASAAACgAAAAEAAAAGjUSiKK9neOq8o3OpkL0s4QAAAA7Ncf4F0qm9xGz2VB5DJHeRQAAACUT4K3Uz9VLqnd4Aad1ZjrSVNtkQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1C0DB4C1-FD40-48B5-BADE-28DAAF953844}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-LS-{1C0DB4C1-FD40-48B5-BADE-28DAAF953844}SQL-SERVER\SQLWES.Stack_Nebraska.sa 3;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAqyv8GRL00sN4/DP21cc28AAAAAASAAACgAAAAEAAAANjUKEzfy3IcJ3ok3EFRk7gQAAAA/BR5qy36Z64h+C/VGSp83hQAAACezQURZmlnhrN8PPaRFjy2SfAHRQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{25E712A9-3379-4FF6-8373-19B485A21F2A}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-LS-{25E712A9-3379-4FF6-8373-19B485A21F2A}SQL-SERVER\SQLWES.Stack_Nebraska.sa 4;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAuSP/yy3JcC39kOMSDyn2MAAAAAASAAACgAAAAEAAAAEJ/5snAnduvhCiaFurdbDYQAAAARmbu1kG/gFQbgCFMPk0fHhQAAAAzJqGhDkyPkAQFGcssFwQ+rBzZXw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{11814572-929C-45A8-A556-794548EAF8BE}"
+      DTS:ObjectName="WS82\SQL2017_DEV.Dispatcher">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=WS82\SQL2017_DEV;Initial Catalog=Dispatcher;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Диспетчер соединений Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D5B1C930-EBD0-4E45-ADB1-18CD03700D5C}"
+      DTS:ObjectName="Диспетчер соединений Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\Import LS_2003.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\from Billing to Dispatcher"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Задача потока данных"
+      DTS:DTSID="{816A0BFB-9701-4CED-A70A-5B18B4EDAAE9}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="from Billing to Dispatcher"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Источник &quot;OLE DB&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;7"
+              description="Источник &quot;OLE DB&quot;"
+              name="Источник &quot;OLE DB&quot;"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Указывает переменную, содержащую имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">declare @d date = GETDATE()
+select top 5000 ls.ROW_ID as AccountID,
+				ls.Номер as AccountNumber,
+				ls.АдресЛС as Address,
+				kr.ФИО as FIO, 
+				tel.Номер as PhoneNumber,
+				sv.Значение as District
+FROM stack.[Лицевые счета] ls
+INNER JOIN stack.[Лицевые иерархия] li_city on li_city.Потомок = ls.ROW_ID
+INNER JOIN stack.[Карточки регистрации] kr on kr.ROW_ID = ls.[Счет-Наниматель]
+INNER JOIN stack.[Лицевые иерархия] li_house on li_house.Потомок = ls.ROW_ID
+INNER JOIN stack.Свойства sv on sv.[Счет-Параметры] = li_house.Родитель
+LEFT JOIN stack.Телефоны tel on tel.[Счет-Телефон] = ls.ROW_ID
+WHERE ls.Тип = 5 and li_city.Родитель = 204263 and not exists (SELECT *
+FROM stack.[Лицевые договора] ld 
+WHERE ld.Лицевой = ls.ROW_ID) and li_house.РодительТип = 3
+and sv.[Виды-Параметры] = 274 and @d between sv.ДатНач and sv.ДатКнц</property>
+                <property
+                  dataType="System.String"
+                  description="Переменная, содержащая команду SQL для выполнения."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Вызывает безусловное использование значение свойства DefaultCodePage при описании символьных данных."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает используемый режим доступа к базе данных."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Сопоставления между параметрами в команде SQL и переменными."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 4]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;]"
+                  name="Выход источника &quot;OLE DB&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      name="AccountID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      name="AccountNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[Address]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Address]"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[FIO]"
+                      name="FIO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[District]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[District]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[District]"
+                      name="District"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      name="PhoneNumber"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      dataType="i4"
+                      name="AccountID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      dataType="i8"
+                      name="AccountNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Address]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="FIO" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[District]"
+                      dataType="r8"
+                      name="District" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;]"
+                  isErrorOut="true"
+                  name="Вывод ошибок источника &quot;OLE DB&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      name="AccountID" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      dataType="i8"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      name="AccountNumber" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Address]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[FIO]"
+                      name="FIO" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[District]"
+                      dataType="r8"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[District]"
+                      name="District" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      name="PhoneNumber" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Назначение &quot;OLE DB&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;4"
+              description="Назначение &quot;OLE DB&quot;"
+              name="Назначение &quot;OLE DB&quot;"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowset">[dbo].[TempTable]</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает переменную, содержащую имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Вызывает безусловное использование значение свойства DefaultCodePage при описании символьных данных."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает используемый режим доступа к базе данных."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, должны ли значения в столбцах идентификаторов копироваться в назначение. Если свойство имеет значение false, значения в столбцах идентификаторов будут созданы автоматически в месте назначения. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, будут ли в назначение вставляться значения NULL для столбцов, содержащих их. Значение false показывает, что если столбец имеет значение NULL, то в назначение будет вставлено его значение по умолчанию. Применяется только в случае, если включена быстрая загрузка."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Задает параметры быстрой загрузки. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Задает, когда выдаются сообщения о фиксации транзакции в ходе вставки данных. Значение 0 задает, что по окончании вставки данных будет выдано одно сообщение о фиксации транзакции. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;]"
+                  errorOrTruncationOperation="Вставить"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Вход назначения &quot;OLE DB&quot;">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[AccountID]"
+                      cachedDataType="i4"
+                      cachedName="AccountID"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountID]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      cachedDataType="i8"
+                      cachedName="AccountNumber"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountNumber]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[Address]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Address]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[FIO]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="FIO"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[FIO]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[District]"
+                      cachedDataType="r8"
+                      cachedName="District"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[District]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[District]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="PhoneNumber"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      lineageId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;].Columns[PhoneNumber]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      dataType="i4"
+                      name="AccountID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      dataType="i8"
+                      name="AccountNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Address]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="FIO" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[District]"
+                      dataType="r8"
+                      name="District" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[TmpTblId]"
+                      dataType="i4"
+                      name="TmpTblId" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок назначения &quot;OLE DB&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход источника &quot;OLE DB&quot;]"
+              endId="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;.Inputs[Вход назначения &quot;OLE DB&quot;]"
+              name="Выход источника &quot;OLE DB&quot;"
+              startId="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;.Outputs[Выход источника &quot;OLE DB&quot;]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--В данном разделе CDATA содержатся сведения о макете пакета. В данном разделе содержатся сведения о координатах (x,y), ширине и высоте.-->
+<!--В случае возникновения ошибки при редактировании этого раздела вручную его можно удалить. -->
+<!--Пакет можно загрузить обычным образом, но прежние сведения о макете будут утеряны, и конструктор автоматически перераспределит элементы в области конструктора.-->
+<Objects
+  Version="8">
+  <!--Все приведенные ниже узлы будут содержать свойства, не влияющие на поведение среды выполнения.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="198,42"
+          Id="Package\from Billing to Dispatcher"
+          TopLeft="89,30" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\from Billing to Dispatcher">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173,42"
+          Id="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;"
+          TopLeft="165,23" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;"
+          TopLeft="136,157" />
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход источника &quot;OLE DB&quot;]"
+          TopLeft="251.5,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-23,92"
+              Start="0,0"
+              End="-23,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42"
+                    Point2="0,46"
+                    Point3="-4,46" />
+                  <mssgle:LineSegment
+                    End="-19,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19,46"
+                    Point2="-23,46"
+                    Point3="-23,50" />
+                  <mssgle:LineSegment
+                    End="-23,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\Источник &quot;OLE DB&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\Назначение &quot;OLE DB&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
