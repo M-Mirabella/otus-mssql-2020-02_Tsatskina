@@ -28,13 +28,13 @@ GO
 
 -- 1. Лицевые счета
 CREATE TABLE [Accounts](
-	[AccountID] [bigint] IDENTITY(1,1) NOT NULL primary key,	
+	[AccountID] [bigint] NOT NULL primary key,	
 	[AccountNumber] [bigint] NOT NULL,	
 	[Address] [nvarchar](256) NULL,
-	[DistrictID] [int] NOT NULL,
+	[DistrictID] [int] NULL,
 	[FIO] [nvarchar](256) NOT NULL,
 	[Comment] [nvarchar](256) NULL,	
-	[E-Mail] [nvarchar](256) NOT NULL
+	[E-Mail] [nvarchar](256) NULL
 ) ON [PRIMARY]
 GO
 
@@ -107,10 +107,10 @@ GO
 -- 9. Телефоны
 CREATE TABLE [PhoneNumbers] (
 	[PhoneNumberID] int IDENTITY(1,1) NOT NULL primary key,
-	[AccountID] bigint NOT NULL,
-	[StaffID] int NOT NULL,
+	[AccountID] bigint NULL,
+	[StaffID] int NULL,
 	[PhoneNumber] nvarchar(25) NOT NULL,
-	[Comment] nvarchar(256) NOT NULL 
+	[Comment] nvarchar(256) NULL 
 	)  ON [PRIMARY]
 GO
 
@@ -121,7 +121,7 @@ CREATE TABLE [TempTable] (
 	[AccountNumber] [bigint] NOT NULL,	
 	[Address] [varchar](256) NULL,
 	[FIO] [varchar](256) NOT NULL,
-	[District] [float] NOT NULL,
+	[District] [varchar](256) NOT NULL,
 	[PhoneNumber] [varchar](256) NULL
 	)  ON [PRIMARY]
 GO
