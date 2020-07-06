@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="LS"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{ADD6C01B-5653-4F34-A168-2915E14964D4}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{E8EA6270-4CF4-47AC-8515-2E95C2E740E0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,7 +27,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAAoXN5cAm1vBiXTLboU65kAAAAAASAAACgAAAAEAAAAJsGSuvp7hpI3jLll3jtbS4QAAAAGZlJXWwP/2DlnWxrlG9VexQAAAD/sKjFQ+u+gWmXcvQW9Bb7ia1Hfg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABgGPbuW4rxFE21q6WCVxLAAAAAAASAAACgAAAAEAAAAGw5/3R1He0sEQLtwmAoJl0QAAAANv6tncselwnTuV/oWxtENRQAAAApGTmOPMQ/uN7cxOMIqbaCgEglgA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -42,7 +42,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAABTBRjZa5baLdY2gnc5s0GAAAAAASAAACgAAAAEAAAAPJ50B8niOUjRsH7UwmbGJAQAAAAHYKGkC1D4cdJWy/nPVyBrhQAAAAr2PpZA9a2kzcMWwv1Ph5VnozmMw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACAyXYt+tFpAIyu2uXDHNnjAAAAAASAAACgAAAAEAAAAF5dyGhqF5K9tpsfOIRrwVEQAAAAGpROlZ4l71FOG1aMyOs++hQAAADWSPwKuDb3D6HiMSW/7kJB3Kdz9Q</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,7 +57,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA56U10pDVdkvIBSu/xFl9lAAAAAASAAACgAAAAEAAAAAFqKjRqTWJ6omDPL54iBdUQAAAATKfcypWjsQ/1Qi2vMr82SBQAAAAPNuqMeVLAqmZU9zHtBgVVzX1SHQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACsDTppaJMAcZUsEBDX6EhwAAAAAASAAACgAAAAEAAAAKhmG0g9ZHXLtV8fYw4r5f8QAAAAIs5FohhyCkcwO1/TfVZSMhQAAADUgBf4NAwEeFuDo8oCzSjLM05tCg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -72,7 +72,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABoHV58/xqpDWhhS7aXUUh9AAAAAASAAACgAAAAEAAAAID8D1La78yfEZfqDQSZUYgQAAAAizuqQ5kJLkFh14AomRhZ1BQAAABJk2R91yaKG8kGD4AVpVaF5Qr7yQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAZKkoreshHjYZ1Jm2uidfEAAAAAASAAACgAAAAEAAAALoyCQqnBCqmLOh+TI0liGkQAAAAB6hE6HZZX0LpkSd15eOFqhQAAABpD7MN9pgNHxfCmfbVKol0BsN+MA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,7 +87,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADa5d2HRrCYhpBfIGRJrurgAAAAAASAAACgAAAAEAAAAJkeb+as0T1w2+qw85Vmv4kQAAAAROMpyM9y7UHt6SSh3lLNqxQAAAD2pK7U89NC+MfaM7X/TSaCEOllEQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAWu28Z5/KkrBCKdBOqJ3I5AAAAAASAAACgAAAAEAAAAHT2KC5q+cEZ7PpG8uUKga0QAAAAypROcXZzxwHmoElLARiDyhQAAADTIgDPk74sb6zWBQfpNy6Laliolw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -599,6 +599,12 @@ and sv.[Виды-Параметры] = 274 and @d between sv.ДатНач and sv
                       cachedName="n_FIO"
                       externalMetadataColumnId="Package\from Billing to Dispatcher\To Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[FIO]"
                       lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_FIO]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\To Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_District]"
+                      cachedDataType="i4"
+                      cachedName="n_District"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\To Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[DistrictID]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_District]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1678,11 +1684,11 @@ and sv.[Виды-Параметры] = 274 and @d between sv.ДатНач and sv
               </outputs>
             </component>
             <component
-              refId="Package\from Billing to Dispatcher\Убрали дубликаты"
+              refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС"
               componentClassID="Microsoft.Lookup"
               contactInfo="Уточняющий запрос;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;6"
               description="Присоединяет дополнительные столбцы к потоку данных путем поиска значений в таблице. Пример: соединение со столбцом &quot;employee id&quot; таблицы employees позволяет получить значения &quot;hire date&quot; и &quot;employee name&quot;. Рекомендуется воспользоваться этим преобразованием, если таблица подстановки не помещается в памяти."
-              name="Убрали дубликаты"
+              name="Убрали дубликаты ЛС"
               usesDispositions="true"
               version="6">
               <properties>
@@ -1746,7 +1752,7 @@ where [refTable].[AccountID] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\from Billing to Dispatcher\Убрали дубликаты.Connections[OleDbConnection]"
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
                   connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
                   description="Диспетчер соединений, используемый для доступа к данным уточняющих запросов."
@@ -1754,11 +1760,11 @@ where [refTable].[AccountID] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\from Billing to Dispatcher\Убрали дубликаты.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
                   name="Ввод преобразования &quot;Уточняющий запрос&quot;">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\from Billing to Dispatcher\Убрали дубликаты.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_AccountID]"
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_AccountID]"
                       cachedDataType="i8"
                       cachedName="n_AccountID"
                       lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]">
@@ -1779,38 +1785,196 @@ where [refTable].[AccountID] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
                   errorOrTruncationOperation="Уточняющий запрос"
                   exclusionGroup="1"
                   name="Вывод совпадений преобразования &quot;Уточняющий запрос&quot;"
-                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Выход несовпадающих строк уточняющего запроса]"
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Выход несовпадающих строк уточняющего запроса]"
                   description="Вывод преобразования &quot;Уточняющий запрос&quot;, которое обрабатывает строки без совпадающих элементов в эталонном наборе данных. Используйте этот выход, если свойство NoMatchBehavior имеет значение &quot;Отправить строки без совпадающих элементов в выход несовпадающих строк&quot;."
                   exclusionGroup="1"
                   name="Выход несовпадающих строк уточняющего запроса"
-                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;]"
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Вывод ошибок преобразования &quot;Уточняющий запрос&quot;"
-                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Уточняющий запрос;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;6"
+              description="Присоединяет дополнительные столбцы к потоку данных путем поиска значений в таблице. Пример: соединение со столбцом &quot;employee id&quot; таблицы employees позволяет получить значения &quot;hire date&quot; и &quot;employee name&quot;. Рекомендуется воспользоваться этим преобразованием, если таблица подстановки не помещается в памяти."
+              name="Убрали дубликаты телефонов"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Задает инструкцию SQL, которая формирует таблицу уточняющих запросов."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[PhoneNumbers]</property>
+                <property
+                  dataType="System.String"
+                  description="Задает инструкцию SQL, которая использует параметры для формирования таблицы уточняющих запросов."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[PhoneNumbers]) [refTable]
+where [refTable].[AccountID] = ? and [refTable].[PhoneNumber] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает тип соединения, используемого для доступа к эталонному набору данных."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает тип кэша таблицы уточняющих запросов."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает, как преобразование &quot;Уточняющий запрос&quot; обрабатывает строки без совпадающих элементов в эталонном наборе данных."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает долю кэша (в процентах), выделенную для строк без совпадающих элементов в эталонном наборе данных."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Максимальный объем памяти для кэша ссылок на 32-разрядной платформе."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Максимальный объем памяти для кэша ссылок на 64-разрядной платформе."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает, следует ли ссылаться на метаданные в формате XML."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PhoneNumberID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AccountID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StaffID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PhoneNumber" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Comment" dataType="DT_WSTR" length="256" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Задает список идентификаторов журнала обращений и преобразований, сопоставляемый с параметрами, которые использует инструкция SQL в свойстве SQLCommand. Элементы списка разделяются точками с запятой."
+                  name="ParameterMap">#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]};#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Определяет, должны ли повторяющиеся ключи в ссылочных данных обрабатываться как ошибки при использовании режима полного кэширования."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Диспетчер соединений, используемый для доступа к данным уточняющих запросов."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+                  name="Ввод преобразования &quot;Уточняющий запрос&quot;">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_AccountID]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountID"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Указывает в ссылочной таблице столбец, который соединен с данным столбцом."
+                          name="JoinToReferenceColumn">AccountID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Указывает в ссылочной таблице столбец, из которого копируется данный столбец."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_PhoneNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_PhoneNumber"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Указывает в ссылочной таблице столбец, который соединен с данным столбцом."
+                          name="JoinToReferenceColumn">PhoneNumber</property>
+                        <property
+                          dataType="System.Null"
+                          description="Указывает в ссылочной таблице столбец, из которого копируется данный столбец."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
+                  errorOrTruncationOperation="Уточняющий запрос"
+                  exclusionGroup="1"
+                  name="Вывод совпадений преобразования &quot;Уточняющий запрос&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Выход несовпадающих строк уточняющего запроса]"
+                  description="Вывод преобразования &quot;Уточняющий запрос&quot;, которое обрабатывает строки без совпадающих элементов в эталонном наборе данных. Используйте этот выход, если свойство NoMatchBehavior имеет значение &quot;Отправить строки без совпадающих элементов в выход несовпадающих строк&quot;."
+                  exclusionGroup="1"
+                  name="Выход несовпадающих строк уточняющего запроса"
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок преобразования &quot;Уточняющий запрос&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1822,12 +1986,12 @@ where [refTable].[AccountID] = ?</property>
           <paths>
             <path
               refId="Package\from Billing to Dispatcher.Paths[n_PhoneNumber not null]"
-              endId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;]"
+              endId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
               name="n_PhoneNumber not null"
               startId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[n_PhoneNumber not null]" />
             <path
               refId="Package\from Billing to Dispatcher.Paths[RowNumber 1]"
-              endId="Package\from Billing to Dispatcher\Убрали дубликаты.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+              endId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
               name="RowNumber 1"
               startId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[RowNumber 1]" />
             <path
@@ -1854,7 +2018,12 @@ where [refTable].[AccountID] = ?</property>
               refId="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса]"
               endId="Package\from Billing to Dispatcher\To Accounts.Inputs[Вход назначения &quot;OLE DB&quot;]"
               name="Выход несовпадающих строк уточняющего запроса"
-              startId="Package\from Billing to Dispatcher\Убрали дубликаты.Outputs[Выход несовпадающих строк уточняющего запроса]" />
+              startId="Package\from Billing to Dispatcher\Убрали дубликаты ЛС.Outputs[Выход несовпадающих строк уточняющего запроса]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса1]"
+              endId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;]"
+              name="Выход несовпадающих строк уточняющего запроса"
+              startId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Выход несовпадающих строк уточняющего запроса]" />
             <path
               refId="Package\from Billing to Dispatcher.Paths[Выходные данные преобразования данных]"
               endId="Package\from Billing to Dispatcher\Многоадресная рассылка.Inputs[Многоадресная рассылка Вход 1]"
@@ -1895,17 +2064,29 @@ where [refTable].[AccountID] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="200,42"
+          Id="Package\from Billing to Dispatcher\Преобразование данных"
+          TopLeft="175,115" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\from Billing to Dispatcher\Выбираем первый ЛС"
+          TopLeft="30,295" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\from Billing to Dispatcher\To PhoneNumbers"
+          TopLeft="310,493" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\from Billing to Dispatcher\To Accounts"
+          TopLeft="42.5,491.5" />
+        <NodeLayout
           Size="153,42"
           Id="Package\from Billing to Dispatcher\Выборка 3000 случайных ЛС"
           TopLeft="521,30" />
         <NodeLayout
-          Size="166,42"
-          Id="Package\from Billing to Dispatcher\To PhoneNumbers"
-          TopLeft="248,405" />
-        <NodeLayout
-          Size="200,42"
-          Id="Package\from Billing to Dispatcher\Преобразование данных"
-          TopLeft="175,115" />
+          Size="195,42"
+          Id="Package\from Billing to Dispatcher\PhoneNumber is not null"
+          TopLeft="246,296" />
         <NodeLayout
           Size="203,42"
           Id="Package\from Billing to Dispatcher\Многоадресная рассылка"
@@ -1915,57 +2096,13 @@ where [refTable].[AccountID] = ?</property>
           Id="Package\from Billing to Dispatcher\В Excel"
           TopLeft="457,207" />
         <NodeLayout
-          Size="137,42"
-          Id="Package\from Billing to Dispatcher\To Accounts"
-          TopLeft="35.5,490.5" />
-        <NodeLayout
           Size="216,42"
           Id="Package\from Billing to Dispatcher\From Stack_Nebraska (2012)"
           TopLeft="188,24" />
-        <EdgeLayout
-          Id="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 3]"
-          TopLeft="383,225">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="74,0"
-              Start="0,0"
-              End="66.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="66.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\from Billing to Dispatcher.Paths[Выход источника &quot;OLE DB&quot;]"
-          TopLeft="404,48">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="117,0"
-              Start="0,0"
-              End="109.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="109.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="187,42"
+          Id="Package\from Billing to Dispatcher\Убрали дубликаты ЛС"
+          TopLeft="25,402" />
         <EdgeLayout
           Id="Package\from Billing to Dispatcher.Paths[Случайный выбор лицевых счетов]"
           TopLeft="597.5,72">
@@ -2024,10 +2161,30 @@ where [refTable].[AccountID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="195,42"
-          Id="Package\from Billing to Dispatcher\PhoneNumber is not null"
-          TopLeft="246,296" />
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса]"
+          TopLeft="114.75,444">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.5"
+              Start="0,0"
+              End="0,40">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-119.598359375,14.35888671875,239.19671875,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 5]"
           TopLeft="314,243">
@@ -2063,46 +2220,6 @@ where [refTable].[AccountID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\from Billing to Dispatcher.Paths[n_PhoneNumber not null]"
-          TopLeft="343.5,338">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.5,67"
-              Start="0,0"
-              End="-12.5,59.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="-4,33.5" />
-                  <mssgle:LineSegment
-                    End="-8.5,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.5,33.5"
-                    Point2="-12.5,33.5"
-                    Point3="-12.5,37.5" />
-                  <mssgle:LineSegment
-                    End="-12.5,59.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-61.46875,38.5,110.4375,11.0625"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="185,42"
-          Id="Package\from Billing to Dispatcher\Выбираем первый ЛС"
-          TopLeft="30,295" />
-        <EdgeLayout
           Id="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 4]"
           TopLeft="249,243">
           <EdgeLayout.Curve>
@@ -2136,67 +2253,147 @@ where [refTable].[AccountID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\from Billing to Dispatcher\Убрали дубликаты"
-          TopLeft="25,402" />
         <EdgeLayout
-          Id="Package\from Billing to Dispatcher.Paths[RowNumber 1]"
-          TopLeft="122.5,337">
+          Id="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 3]"
+          TopLeft="383,225">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-12.5,65"
+              EndConnector="74,0"
               Start="0,0"
-              End="-12.5,57.5">
+              End="66.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.5"
-                    Point2="0,32.5"
-                    Point3="-4,32.5" />
+                    End="66.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход источника &quot;OLE DB&quot;]"
+          TopLeft="404,48">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117,0"
+              Start="0,0"
+              End="109.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-8.5,32.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.5,32.5"
-                    Point2="-12.5,32.5"
-                    Point3="-12.5,36.5" />
+                    End="109.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[RowNumber 1]"
+          TopLeft="120.5,337">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="-12.5,57.5" />
+                    End="0,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-37.82056640625,37.5,63.1411328125,9.7490234375"
+              BoundingBox="-31.57056640625,23.87548828125,63.1411328125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="227,42"
+          Id="Package\from Billing to Dispatcher\Убрали дубликаты телефонов"
+          TopLeft="270,396" />
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[n_PhoneNumber not null]"
+          TopLeft="343.5,338">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40,58"
+              Start="0,0"
+              End="40,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="4,29" />
+                  <mssgle:LineSegment
+                    End="36,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36,29"
+                    Point2="40,29"
+                    Point3="40,33" />
+                  <mssgle:LineSegment
+                    End="40,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-35.21875,34,110.4375,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса]"
-          TopLeft="107,444">
+          Id="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса1]"
+          TopLeft="383.5,438">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46.5"
+              EndConnector="9.5,55"
               Start="0,0"
-              End="0,39">
+              End="9.5,47.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,39" />
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="4,27.5" />
+                  <mssgle:LineSegment
+                    End="5.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.5,27.5"
+                    Point2="9.5,27.5"
+                    Point3="9.5,31.5" />
+                  <mssgle:LineSegment
+                    End="9.5,47.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-119.598359375,13.85888671875,239.19671875,11.2822265625"
+              BoundingBox="-114.848359375,32.5,239.19671875,11.2822265625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2205,19 +2402,6 @@ where [refTable].[AccountID] = ?</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\from Billing to Dispatcher\To PhoneNumbers">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\from Billing to Dispatcher\В Excel">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2243,6 +2427,19 @@ where [refTable].[AccountID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\В Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\from Billing to Dispatcher\From Stack_Nebraska (2012)">
     <Properties>
       <Property>
@@ -2251,7 +2448,30 @@ where [refTable].[AccountID] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\from Billing to Dispatcher\Убрали дубликаты">
+    design-time-name="Package\from Billing to Dispatcher\Убрали дубликаты ЛС">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Accounts]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\Убрали дубликаты телефонов">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
@@ -2261,7 +2481,7 @@ where [refTable].[AccountID] = ?</property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Accounts]</Value>
+          type="q3:string">[dbo].[PhoneNumbers]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
