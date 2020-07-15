@@ -4,8 +4,6 @@
 
 USE Dispatcher
 
-DROP TABLE IF EXISTS RequestStatuses
-GO
 DROP TABLE IF EXISTS PhoneNumbers
 GO
 DROP TABLE IF EXISTS Requests
@@ -40,19 +38,23 @@ CREATE TABLE [Accounts](
 ) ON [PRIMARY]
 GO
 
--- 2. Реестр заявок
+-- 2. Реестр заявок (темпоральная)
 CREATE TABLE [Requests](
-	[RequestID] [bigint] IDENTITY(1,1) NOT NULL primary key,
-	[RequestNumber] [bigint] NOT NULL,
-	[RequestDate] [datetime2] NOT NULL,
-	[AccountID] [bigint] NOT NULL,
-	[StatusID] [int] NOT NULL,
-	[AutorID]  [int] NOT NULL,
-	[TeamID] [int] NOT NULL,
-	[CategoryID] [int] NOT NULL,
-	[RequestContent] [nvarchar](1000) NOT NULL,
-	[ExecuteBefore] [datetime2] NOT NULL
-	) ON [PRIMARY]
+	[RequestID] bigint IDENTITY(1,1) NOT NULL primary key,
+	[RequestNumber] bigint NOT NULL,
+	[RequestDate] datetime2 NOT NULL,
+	[AccountID] bigint NOT NULL,
+	[StatusID] int NOT NULL,
+	[AutorID]  int NOT NULL,
+	[TeamID] int NOT NULL,
+	[CategoryID] int NOT NULL,
+	[RequestContent] nvarchar(1000) NOT NULL,
+	[ExecuteBefore] datetime2 NOT NULL,
+	[ValidFrom] datetime2(7) GENERATED ALWAYS AS ROW START NOT NULL,
+	[ValidTo] datetime2(7) GENERATED ALWAYS AS ROW END NOT NULL,
+	PERIOD FOR SYSTEM_TIME (ValidFrom, ValidTo)
+	) 
+WITH (SYSTEM_VERSIONING = ON ( HISTORY_TABLE = dbo.[Requests_Archive] ))
 GO
 
 -- 3. Сотрудники
@@ -95,18 +97,7 @@ CREATE TABLE [Teams](
 	) ON [PRIMARY]
 GO
 
--- 8. Статусы заявок
-CREATE TABLE [RequestStatuses] (
-	[RequestStatusID] bigint IDENTITY(1,1) NOT NULL primary key,
-	[RequestID] bigint NOT NULL,
-	[StatusID] int NOT NULL,
-	[StatusDate] datetime2 NOT NULL,
-	[StaffID] int NOT NULL,
-	[Comment] nvarchar(256) NOT NULL
-	)  ON [PRIMARY]
-GO
-
--- 9. Телефоны
+-- 8. Телефоны
 CREATE TABLE [PhoneNumbers] (
 	[PhoneNumberID] int IDENTITY(1,1) NOT NULL primary key,
 	[AccountID] bigint NULL,
@@ -147,13 +138,6 @@ REFERENCES Teams (TeamID)
 ALTER TABLE Teams ADD CONSTRAINT FK_Teams_Districts FOREIGN KEY(DistrictID)
 REFERENCES Districts (DistrictID)
 
------ RequestStatuses
-ALTER TABLE RequestStatuses ADD CONSTRAINT FK_RequestStatuses_Statuses FOREIGN KEY(StatusID)
-REFERENCES Statuses (StatusID)
-
-ALTER TABLE RequestStatuses ADD CONSTRAINT FK_RequestStatuses_Requests FOREIGN KEY(RequestID)
-REFERENCES Requests (RequestID)
-
 ----- PhoneNumbers
 ALTER TABLE PhoneNumbers ADD CONSTRAINT FK_PhoneNumbers_Accounts FOREIGN KEY(AccountID)
 REFERENCES Accounts (AccountID)
@@ -177,7 +161,7 @@ CREATE INDEX nc_Requests_RequestNumber ON dbo.Requests (RequestNumber);
 CREATE INDEX nc_Requests_RequestDate   ON dbo.Requests (RequestDate);
 CREATE INDEX nc_Requests_AutorID       ON dbo.Requests (AutorID);
 
-CREATE INDEX nc_RequestStatuses_RequestID ON dbo.RequestStatuses (RequestID);
+
 
 
 
