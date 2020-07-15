@@ -1,0 +1,2588 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2020 1:42:05 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="WS82"
+  DTS:CreatorName="WES\TsatskinaAV"
+  DTS:DTSID="{F38069CC-DB2A-449C-8D58-FB30266B7015}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="1049"
+  DTS:ObjectName="LS"
+  DTS:PackageType="5"
+  DTS:VersionBuild="60"
+  DTS:VersionGUID="{CB25CCCB-23A7-424D-915F-233D75DCD098}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BE44B0BC-B257-4989-A181-9CDDAE266796}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJwIIK9dkognZCwCLIB1vuAAAAAASAAACgAAAAEAAAACeaG6CRIBrlwkEQ5iq1mG8QAAAACvN7FhD2a2ZG743ITwFaZBQAAADjaYvBfiqLjY/voLmvq3CySEon9w</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{0A1A730A-31B7-46C3-A749-9CE3AADDD2C3}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADhSwVW2hnyo9t0zUWddTgWAAAAAASAAACgAAAAEAAAAAKH799NpqeffpDkVdvV7N4QAAAAHREBocDvRzn0Ft6CcVTAJxQAAAAcKMBcRDXh6d+O9RsiyZob+l5tqQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{24DF7B7B-CCC9-496F-8EA5-EEE1793F3D7D}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-LS-{24DF7B7B-CCC9-496F-8EA5-EEE1793F3D7D}SQL-SERVER\SQLWES.Stack_Nebraska.sa 2;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB3q0zs9PBEjC2r+kAwmo/QAAAAAASAAACgAAAAEAAAAAQ1dHuAhAkjmmqNPmuVm/oQAAAAPDlf23wEohE/YqRXfWckfBQAAAAWS26oSOw+FCUKDiq2hC39WcM/Dg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1C0DB4C1-FD40-48B5-BADE-28DAAF953844}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-LS-{1C0DB4C1-FD40-48B5-BADE-28DAAF953844}SQL-SERVER\SQLWES.Stack_Nebraska.sa 3;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADx/9UiGCLEobGjVH3S83f5AAAAAASAAACgAAAAEAAAAGScYssxQtD+Zhro564NXb0QAAAAPZU3LczMjU81Sn70qX2BJxQAAABxPUj4nIqRJ2mvnyAVsAG59eKKTQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{25E712A9-3379-4FF6-8373-19B485A21F2A}"
+      DTS:ObjectName="SQL-SERVER\SQLWES.Stack_Nebraska.sa 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SQL-SERVER\SQLWES;User ID=sa;Initial Catalog=Stack_Nebraska;Provider=SQLNCLI10.1;Persist Security Info=True;Application Name=SSIS-LS-{25E712A9-3379-4FF6-8373-19B485A21F2A}SQL-SERVER\SQLWES.Stack_Nebraska.sa 4;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAActDU3gY+60yz6ZuIHhgcugAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD6XnECmcnu2nuXVkTbptf7AAAAAASAAACgAAAAEAAAAB64gn6PY//ZAQoJPex6GHsQAAAAh396O58Zqq52KRcpbop4UhQAAAD9B/U2EVRoAZj2IyNvtYd2EgaXZg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{11814572-929C-45A8-A556-794548EAF8BE}"
+      DTS:ObjectName="WS82\SQL2017_DEV.Dispatcher">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=WS82\SQL2017_DEV;Initial Catalog=Dispatcher;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Диспетчер соединений Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D5B1C930-EBD0-4E45-ADB1-18CD03700D5C}"
+      DTS:ObjectName="Диспетчер соединений Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\Import LS_2003.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Диспетчер соединений Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B7B7E868-37BF-4075-8BA3-311AD36A657E}"
+      DTS:ObjectName="Диспетчер соединений Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\SQL\Обучение\Project\Перенос данных с 12 в 17.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Диспетчер соединений Excel 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9BA0D9EA-8515-4EA8-8B62-C22A8F448B76}"
+      DTS:ObjectName="Диспетчер соединений Excel 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=F:\SQL\Обучение\Project\Phn.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\from Billing to Dispatcher"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Задача потока данных"
+      DTS:DTSID="{816A0BFB-9701-4CED-A70A-5B18B4EDAAE9}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="from Billing to Dispatcher"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012)"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Источник &quot;OLE DB&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;7"
+              description="Источник &quot;OLE DB&quot;"
+              name="From Stack_Nebraska (2012)"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Указывает переменную, содержащую имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DECLARE @d date = GETDATE();
+with cte_addr as
+(
+select LSI.Потомок, 
+       case when ls.Тип = 2  then (select ISNULL(Название, '')
+                                from stack.[Города] where row_id = [Улица-Лицевой счет] ) else '' end as [Улица],
+       case when ls.Тип = 3  then ( CONVERT( VARCHAR(10), Номер) + ISNULL( Фамилия, '' ) )  else '' end as [Дом],
+       case when ls.Тип = 4  then ( ( CASE WHEN Номер != 0 THEN CONVERT( VARCHAR(10), Номер) ELSE '' END ) + 
+	                                   (CASE WHEN ISNULL(Фамилия,'') != '' THEN ' '+ISNULL(Фамилия,'') ELSE '' END ) )  else '' end as [Квартира],   
+       case when ls.Тип = 12 then (select ISNULL(Название,'')
+                                                        from stack.[Города] where row_id = [Улица-Лицевой счет] ) else '' end as [НП]
+from  stack.[Лицевые иерархия] LSI_1 
+join stack.[Лицевые иерархия] LSI ON LSI.Потомок = LSI_1.Потомок
+join stack.[Лицевые счета] ls on ls.ROW_ID = LSI.Родитель
+where LSI_1.родитель in (204263) and LSI_1.ПотомокТип = 5
+),
+
+cte_ls as (
+SELECT TOP 5000 Потомок as AccountID, Max(НП) as City, Max(Улица) as Street, Max(Дом) as House, Max(Квартира) as Flat
+FROM cte_addr 
+GROUP BY cte_addr.Потомок)
+
+SELECT ls.ROW_ID as AccountID,
+       ls.Номер as AccountNumber, 
+	   cte_ls.City,
+	   cte_ls.Street,
+	   cte_ls.House,
+	   cte_ls.Flat,
+       kr.ФИО as FIO,
+       sv.Значение+1  as District,
+      '' as Email,
+	   ls.Примечание as Comment,
+	   REPLACE(REPLACE(tel.Номер, 'д', ' '), 'м', ' ') as PhoneNumber,
+       ROW_NUMBER() over(partition BY cte_LS.AccountID ORDER BY cte_LS.AccountID) RowNumber
+FROM cte_ls 
+INNER JOIN stack.[Лицевые счета] ls
+            on ls.ROW_ID = cte_ls.AccountID
+INNER JOIN stack.[Лицевые иерархия] li_house
+            on li_house.Потомок = ls.ROW_ID
+INNER JOIN stack.[Карточки регистрации] kr
+            on kr.ROW_ID = ls.[Счет-Наниматель]
+INNER JOIN stack.Свойства sv
+            on sv.[Счет-Параметры] = li_house.Родитель
+LEFT JOIN stack.Телефоны tel
+            on tel.[Счет-Телефон] = cte_LS.AccountID  and len(tel.Номер)&gt;3
+WHERE li_house.РодительТип = 3
+ and sv.[Виды-Параметры] = 274 -- Район
+		       and @d between sv.ДатНач  and sv.ДатКнц</property>
+                <property
+                  dataType="System.String"
+                  description="Переменная, содержащая команду SQL для выполнения."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Вызывает безусловное использование значение свойства DefaultCodePage при описании символьных данных."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает используемый режим доступа к базе данных."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Сопоставления между параметрами в команде SQL и переменными."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[SQL-SERVER\SQLWES.Stack_Nebraska.sa 4]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;]"
+                  name="Выход источника &quot;OLE DB&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      name="AccountID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      name="AccountNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[FIO]"
+                      name="FIO"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[District]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[District]"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[District]"
+                      name="District"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Comment]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Comment]"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Comment]"
+                      name="Comment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[City]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[City]"
+                      length="513"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Street]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Street]"
+                      length="513"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Street]"
+                      name="Street"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[House]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[House]"
+                      length="266"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[House]"
+                      name="House"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Flat]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Flat]"
+                      length="267"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Flat]"
+                      name="Flat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      length="8000"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      name="PhoneNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[RowNumber]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[RowNumber]"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[RowNumber]"
+                      name="RowNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Email]"
+                      codePage="1251"
+                      dataType="str"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Email]"
+                      length="1"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      dataType="i4"
+                      name="AccountID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      dataType="i8"
+                      name="AccountNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="FIO" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[District]"
+                      dataType="r8"
+                      name="District" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Comment]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="Comment" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[City]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Street]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      name="Street" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[House]"
+                      codePage="1251"
+                      dataType="str"
+                      length="266"
+                      name="House" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Flat]"
+                      codePage="1251"
+                      dataType="str"
+                      length="267"
+                      name="Flat" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      length="8000"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[RowNumber]"
+                      dataType="i8"
+                      name="RowNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].ExternalColumns[Email]"
+                      codePage="1251"
+                      dataType="str"
+                      length="1"
+                      name="Email" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;]"
+                  isErrorOut="true"
+                  name="Вывод ошибок источника &quot;OLE DB&quot;">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountID]"
+                      name="AccountID" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      dataType="i8"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[AccountNumber]"
+                      name="AccountNumber" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[City]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Street]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Street]"
+                      name="Street" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[House]"
+                      codePage="1251"
+                      dataType="str"
+                      length="266"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[House]"
+                      name="House" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Flat]"
+                      codePage="1251"
+                      dataType="str"
+                      length="267"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Flat]"
+                      name="Flat" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[FIO]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[FIO]"
+                      name="FIO" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[District]"
+                      dataType="r8"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[District]"
+                      name="District" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Email]"
+                      codePage="1251"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Comment]"
+                      codePage="1251"
+                      dataType="str"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[Comment]"
+                      name="Comment" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      codePage="1251"
+                      dataType="str"
+                      length="8000"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[PhoneNumber]"
+                      name="PhoneNumber" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[RowNumber]"
+                      dataType="i8"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[RowNumber]"
+                      name="RowNumber" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Вывод ошибок источника &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Insert Accounts"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Назначение &quot;OLE DB&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;4"
+              description="Назначение &quot;OLE DB&quot;"
+              name="Insert Accounts"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowset">[dbo].[Accounts]</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает переменную, содержащую имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Вызывает безусловное использование значение свойства DefaultCodePage при описании символьных данных."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает используемый режим доступа к базе данных."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, должны ли значения в столбцах идентификаторов копироваться в назначение. Если свойство имеет значение false, значения в столбцах идентификаторов будут созданы автоматически в месте назначения. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadKeepIdentity">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, будут ли в назначение вставляться значения NULL для столбцов, содержащих их. Значение false показывает, что если столбец имеет значение NULL, то в назначение будет вставлено его значение по умолчанию. Применяется только в случае, если включена быстрая загрузка."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Задает параметры быстрой загрузки. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Задает, когда выдаются сообщения о фиксации транзакции в ходе вставки данных. Значение 0 задает, что по окончании вставки данных будет выдано одно сообщение о фиксации транзакции. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Insert Accounts.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;]"
+                  errorOrTruncationOperation="Вставить"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Вход назначения &quot;OLE DB&quot;">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_AccountID]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountID"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_AccountNumber]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountNumber"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountNumber]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_FIO]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="n_FIO"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_FIO]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_District]"
+                      cachedDataType="i4"
+                      cachedName="n_District"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[DistrictID]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_District]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_Comment]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="n_Comment"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Comment]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Comment]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_City]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="n_City"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[City]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_City]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_Street]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="n_Street"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Street]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Street]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_House]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_House"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[House]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_House]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_Flat]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_Flat"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Flat]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Flat]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_Email]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="n_Email"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[E-Mail]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Email]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      dataType="i8"
+                      name="AccountID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountNumber]"
+                      dataType="i8"
+                      name="AccountNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[FIO]"
+                      dataType="wstr"
+                      length="256"
+                      name="FIO" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[DistrictID]"
+                      dataType="i4"
+                      name="DistrictID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Comment]"
+                      dataType="wstr"
+                      length="256"
+                      name="Comment" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[E-Mail]"
+                      dataType="wstr"
+                      length="256"
+                      name="E-Mail" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="100"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Street]"
+                      dataType="wstr"
+                      length="100"
+                      name="Street" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[House]"
+                      dataType="wstr"
+                      length="25"
+                      name="House" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Flat]"
+                      dataType="wstr"
+                      length="25"
+                      name="Flat" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Insert Accounts.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок назначения &quot;OLE DB&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Insert Accounts.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Insert Accounts.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Insert Accounts.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\PhoneNumber is not null"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Условное разбиение;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Распределяет строки данных по разным выходам в зависимости от содержимого данных. Используйте условие (выражения SSIS), чтобы указать распределяемые строки. Пример: разделение записей, которые необходимо очистить, от подготовленных к загрузке или распределение только подмножества записей."
+              name="PhoneNumber is not null"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Inputs[Вход условного разбиения]"
+                  description="Ввод преобразования &quot;Условное разбиение&quot;"
+                  name="Вход условного разбиения">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Inputs[Вход условного разбиения].Columns[n_PhoneNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_PhoneNumber"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[n_PhoneNumber not null]"
+                  description="Вывод 1 преобразования &quot;Условное разбиение&quot;"
+                  errorOrTruncationOperation="Вычисление"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="n_PhoneNumber not null"
+                  synchronousInputId="Package\from Billing to Dispatcher\PhoneNumber is not null.Inputs[Вход условного разбиения]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Указывает выражение. Версия этого выражения использует вместо имен столбцов идентификаторы журнала обращений и преобразований."
+                      name="Expression">![ISNULL](#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Задает понятную версию выражения. Эта версия выражения использует имена столбцов."
+                      expressionType="Notify"
+                      name="FriendlyExpression">!ISNULL(n_PhoneNumber)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Указывает положение условия в списке условий, который вычисляется преобразованием. Вычисление производится в порядке от меньшего к большему значению."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[Выход по умолчанию условного разбиения]"
+                  description="Выход по умолчанию преобразования &quot;Условное разбиение&quot;"
+                  exclusionGroup="1"
+                  name="Выход по умолчанию условного разбиения"
+                  synchronousInputId="Package\from Billing to Dispatcher\PhoneNumber is not null.Inputs[Вход условного разбиения]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[Вывод ошибок условного разбиения]"
+                  description="Вывод ошибок преобразования &quot;Условное разбиение&quot;"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок условного разбиения"
+                  synchronousInputId="Package\from Billing to Dispatcher\PhoneNumber is not null.Inputs[Вход условного разбиения]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[Вывод ошибок условного разбиения].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[Вывод ошибок условного разбиения].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[Вывод ошибок условного разбиения].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[Вывод ошибок условного разбиения].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\To PhoneNumbers"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Назначение &quot;OLE DB&quot;;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;4"
+              description="Назначение &quot;OLE DB&quot;"
+              name="To PhoneNumbers"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowset">[dbo].[PhoneNumbers]</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает переменную, содержащую имя объекта базы данных, используемого для открытия набора строк."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Вызывает безусловное использование значение свойства DefaultCodePage при описании символьных данных."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает используемый режим доступа к базе данных."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, должны ли значения в столбцах идентификаторов копироваться в назначение. Если свойство имеет значение false, значения в столбцах идентификаторов будут созданы автоматически в месте назначения. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Указывает, будут ли в назначение вставляться значения NULL для столбцов, содержащих их. Значение false показывает, что если столбец имеет значение NULL, то в назначение будет вставлено его значение по умолчанию. Применяется только в случае, если включена быстрая загрузка."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Задает параметры быстрой загрузки. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Задает, когда выдаются сообщения о фиксации транзакции в ходе вставки данных. Значение 0 задает, что по окончании вставки данных будет выдано одно сообщение о фиксации транзакции. Применяется только в том случае, если включена быстрая загрузка."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\To PhoneNumbers.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;]"
+                  errorOrTruncationOperation="Вставить"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Вход назначения &quot;OLE DB&quot;">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_AccountID]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountID"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].Columns[n_PhoneNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_PhoneNumber"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[AccountID]"
+                      dataType="i8"
+                      name="AccountID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[PhoneNumber]"
+                      dataType="wstr"
+                      length="25"
+                      name="PhoneNumber" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[PhoneNumberID]"
+                      dataType="i4"
+                      name="PhoneNumberID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[StaffID]"
+                      dataType="i4"
+                      name="StaffID" />
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;].ExternalColumns[Comment]"
+                      dataType="wstr"
+                      length="256"
+                      name="Comment" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\To PhoneNumbers.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок назначения &quot;OLE DB&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\To PhoneNumbers.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\To PhoneNumbers.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\To PhoneNumbers.Outputs[Вывод ошибок назначения &quot;OLE DB&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Update Accounts"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="Команда OLE DB;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;2"
+              description="Выполняет инструкцию SQL для каждой строки в потоке данных. Пример: вызов хранимой процедуры &quot;new employee setup&quot; для всех строк в таблице &quot;new employees&quot;. Примечание. Выполнение инструкции SQL для всех строк большого потока данных может занять длительное время."
+              name="Update Accounts"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Время ожидания команды, в секундах. Величина 0 означает неограниченное время ожидания."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Команда SQL для выполнения."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">DECLARE @accid bigint = ?,
+		@accnumber bigint = ?,		
+		@fio nvarchar(256) = ?,
+		@distrid int = ?,
+		@comment nvarchar(256) = ?,		
+		@city nvarchar(100) = ?,
+		@street nvarchar(100) = ?,
+		@house nvarchar(25) = ?,
+		@flat nvarchar(25) = ?,
+		@email nvarchar(256) = ?
+		
+IF( EXISTS(SELECT AccountID
+		   FROM dbo.Accounts
+		   WHERE AccountID = @accid)
+  )
+BEGIN
+ UPDATE dbo.Accounts
+ SET AccountNumber = @accid,
+     City = @city,
+     Street = @street,
+     House = @house,
+     Flat = @flat,
+	 DistrictID = @distrid,
+	 FIO = @fio,
+	 Comment = @comment,
+	 [E-mail] = @email
+ WHERE AccountID = @accid
+ END</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Update Accounts.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Соединение OLE DB среды выполнения, используемое для доступа к базе данных."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB]"
+                  errorOrTruncationOperation="Выполнение команды"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Вход команды OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_AccountID]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountID"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_0]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_AccountNumber]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountNumber"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_1]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountNumber]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_FIO]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="n_FIO"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_2]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_FIO]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_District]"
+                      cachedDataType="i4"
+                      cachedName="n_District"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_3]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_District]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_Comment]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="n_Comment"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_4]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Comment]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_City]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="n_City"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_5]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_City]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_Street]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="n_Street"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_6]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Street]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_House]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_House"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_7]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_House]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_Flat]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_Flat"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_8]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Flat]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].Columns[n_Email]"
+                      cachedDataType="wstr"
+                      cachedLength="256"
+                      cachedName="n_Email"
+                      externalMetadataColumnId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_9]"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Email]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_0]"
+                      dataType="i8"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_1]"
+                      dataType="i8"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="256"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_3]"
+                      dataType="i4"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_4]"
+                      dataType="wstr"
+                      length="256"
+                      name="Param_4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_5]"
+                      dataType="wstr"
+                      length="100"
+                      name="Param_5">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_6]"
+                      dataType="wstr"
+                      length="100"
+                      name="Param_6">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_7]"
+                      dataType="wstr"
+                      length="25"
+                      name="Param_7">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_8]"
+                      dataType="wstr"
+                      length="25"
+                      name="Param_8">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB].ExternalColumns[Param_9]"
+                      dataType="wstr"
+                      length="256"
+                      name="Param_9">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Сведения о параметрах. Соответствуют значениям DBPARAMFLAGSENUM OLE DB."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Update Accounts.Outputs[Выход команды OLE DB]"
+                  exclusionGroup="1"
+                  name="Выход команды OLE DB"
+                  synchronousInputId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Update Accounts.Outputs[Вывод ошибок команды OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок команды OLE DB"
+                  synchronousInputId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Outputs[Вывод ошибок команды OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Update Accounts.Outputs[Вывод ошибок команды OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Update Accounts.Outputs[Вывод ошибок команды OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Update Accounts.Outputs[Вывод ошибок команды OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Выбираем первый ЛС"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Условное разбиение;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Распределяет строки данных по разным выходам в зависимости от содержимого данных. Используйте условие (выражения SSIS), чтобы указать распределяемые строки. Пример: разделение записей, которые необходимо очистить, от подготовленных к загрузке или распределение только подмножества записей."
+              name="Выбираем первый ЛС"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Inputs[Вход условного разбиения]"
+                  description="Ввод преобразования &quot;Условное разбиение&quot;"
+                  name="Вход условного разбиения">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Inputs[Вход условного разбиения].Columns[n_RowNumber]"
+                      cachedDataType="i4"
+                      cachedName="n_RowNumber"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_RowNumber]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[RowNumber 1]"
+                  description="Вывод 1 преобразования &quot;Условное разбиение&quot;"
+                  errorOrTruncationOperation="Вычисление"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="RowNumber 1"
+                  synchronousInputId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Inputs[Вход условного разбиения]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Указывает выражение. Версия этого выражения использует вместо имен столбцов идентификаторы журнала обращений и преобразований."
+                      name="Expression">#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_RowNumber]} == 1</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Задает понятную версию выражения. Эта версия выражения использует имена столбцов."
+                      expressionType="Notify"
+                      name="FriendlyExpression">n_RowNumber == 1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Указывает положение условия в списке условий, который вычисляется преобразованием. Вычисление производится в порядке от меньшего к большему значению."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[Выход по умолчанию условного разбиения]"
+                  description="Выход по умолчанию преобразования &quot;Условное разбиение&quot;"
+                  exclusionGroup="1"
+                  name="Выход по умолчанию условного разбиения"
+                  synchronousInputId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Inputs[Вход условного разбиения]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[Вывод ошибок условного разбиения]"
+                  description="Вывод ошибок преобразования &quot;Условное разбиение&quot;"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок условного разбиения"
+                  synchronousInputId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Inputs[Вход условного разбиения]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[Вывод ошибок условного разбиения].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[Вывод ошибок условного разбиения].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[Вывод ошибок условного разбиения].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[Вывод ошибок условного разбиения].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Многоадресная рассылка"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Многоадресная рассылка;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Распределяет все входные строки между всеми строками в одном или нескольких выходах. Пример: разбиение потока данных на ветви, чтобы создать копию данных, в которой некоторые значения перед передачей внешним партнерам будут скрыты."
+              name="Многоадресная рассылка">
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Многоадресная рассылка.Inputs[Многоадресная рассылка Вход 1]"
+                  name="Многоадресная рассылка Вход 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Многоадресная рассылка.Outputs[Выход многоадресной рассылки 5]"
+                  deleteOutputOnPathDetached="true"
+                  name="Выход многоадресной рассылки 5"
+                  synchronousInputId="Package\from Billing to Dispatcher\Многоадресная рассылка.Inputs[Многоадресная рассылка Вход 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Многоадресная рассылка.Outputs[Выход многоадресной рассылки 4]"
+                  deleteOutputOnPathDetached="true"
+                  name="Выход многоадресной рассылки 4"
+                  synchronousInputId="Package\from Billing to Dispatcher\Многоадресная рассылка.Inputs[Многоадресная рассылка Вход 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Многоадресная рассылка.Outputs[Выход многоадресной рассылки 2]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Выход многоадресной рассылки 2"
+                  synchronousInputId="Package\from Billing to Dispatcher\Многоадресная рассылка.Inputs[Многоадресная рассылка Вход 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Обработка ЛС"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Уточняющий запрос;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;6"
+              description="Присоединяет дополнительные столбцы к потоку данных путем поиска значений в таблице. Пример: соединение со столбцом &quot;employee id&quot; таблицы employees позволяет получить значения &quot;hire date&quot; и &quot;employee name&quot;. Рекомендуется воспользоваться этим преобразованием, если таблица подстановки не помещается в памяти."
+              name="Обработка ЛС"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Задает инструкцию SQL, которая формирует таблицу уточняющих запросов."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Accounts]</property>
+                <property
+                  dataType="System.String"
+                  description="Задает инструкцию SQL, которая использует параметры для формирования таблицы уточняющих запросов."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Accounts]) [refTable]
+where [refTable].[AccountID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает тип соединения, используемого для доступа к эталонному набору данных."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает тип кэша таблицы уточняющих запросов."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает, как преобразование &quot;Уточняющий запрос&quot; обрабатывает строки без совпадающих элементов в эталонном наборе данных."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает долю кэша (в процентах), выделенную для строк без совпадающих элементов в эталонном наборе данных."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Максимальный объем памяти для кэша ссылок на 32-разрядной платформе."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Максимальный объем памяти для кэша ссылок на 64-разрядной платформе."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает, следует ли ссылаться на метаданные в формате XML."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="AccountID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AccountNumber" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="City" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Street" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="House" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Flat" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DistrictID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FIO" dataType="DT_WSTR" length="256" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Comment" dataType="DT_WSTR" length="256" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="E-Mail" dataType="DT_WSTR" length="256" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Задает список идентификаторов журнала обращений и преобразований, сопоставляемый с параметрами, которые использует инструкция SQL в свойстве SQLCommand. Элементы списка разделяются точками с запятой."
+                  name="ParameterMap">#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Определяет, должны ли повторяющиеся ключи в ссылочных данных обрабатываться как ошибки при использовании режима полного кэширования."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Обработка ЛС.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Диспетчер соединений, используемый для доступа к данным уточняющих запросов."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Обработка ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+                  name="Ввод преобразования &quot;Уточняющий запрос&quot;">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Обработка ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_AccountID]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountID"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Указывает в ссылочной таблице столбец, который соединен с данным столбцом."
+                          name="JoinToReferenceColumn">AccountID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Указывает в ссылочной таблице столбец, из которого копируется данный столбец."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
+                  errorOrTruncationOperation="Уточняющий запрос"
+                  exclusionGroup="1"
+                  name="Вывод совпадений преобразования &quot;Уточняющий запрос&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Обработка ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Выход несовпадающих строк уточняющего запроса]"
+                  description="Вывод преобразования &quot;Уточняющий запрос&quot;, которое обрабатывает строки без совпадающих элементов в эталонном наборе данных. Используйте этот выход, если свойство NoMatchBehavior имеет значение &quot;Отправить строки без совпадающих элементов в выход несовпадающих строк&quot;."
+                  exclusionGroup="1"
+                  name="Выход несовпадающих строк уточняющего запроса"
+                  synchronousInputId="Package\from Billing to Dispatcher\Обработка ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок преобразования &quot;Уточняющий запрос&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Обработка ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Преобразование данных"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Преобразование данных;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;0"
+              description="Преобразование данных"
+              name="Преобразование данных"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных]"
+                  name="Входные данные преобразования данных">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[AccountID]"
+                      cachedDataType="i4"
+                      cachedName="AccountID"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountID]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[AccountNumber]"
+                      cachedDataType="i8"
+                      cachedName="AccountNumber"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[AccountNumber]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[FIO]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="FIO"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[FIO]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[District]"
+                      cachedDataType="r8"
+                      cachedName="District"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[District]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[PhoneNumber]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="8000"
+                      cachedName="PhoneNumber"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[PhoneNumber]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[RowNumber]"
+                      cachedDataType="i8"
+                      cachedName="RowNumber"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[RowNumber]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Comment]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="256"
+                      cachedName="Comment"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Comment]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[City]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="513"
+                      cachedName="City"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[City]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Street]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="513"
+                      cachedName="Street"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Street]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[House]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="266"
+                      cachedName="House"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[House]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Flat]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="267"
+                      cachedName="Flat"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Flat]" />
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных].Columns[Email]"
+                      cachedCodepage="1251"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="Email"
+                      lineageId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;].Columns[Email]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных]"
+                  exclusionGroup="1"
+                  name="Выходные данные преобразования данных"
+                  synchronousInputId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]"
+                      name="n_AccountID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[AccountID]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountNumber]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountNumber]"
+                      name="n_AccountNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[AccountNumber]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_FIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_FIO]"
+                      name="n_FIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[FIO]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_District]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_District]"
+                      name="n_District"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[District]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="25"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]"
+                      name="n_PhoneNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[PhoneNumber]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_RowNumber]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_RowNumber]"
+                      name="n_RowNumber"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[RowNumber]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Comment]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Comment]"
+                      name="n_Comment"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[Comment]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_City]"
+                      name="n_City"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[City]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Street]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="100"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Street]"
+                      name="n_Street"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[Street]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_House]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="25"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_House]"
+                      name="n_House"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[House]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Flat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="25"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Flat]"
+                      name="n_Flat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[Flat]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Преобразование"
+                      errorRowDisposition="FailComponent"
+                      length="256"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_Email]"
+                      name="n_Email"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Указывает входной столбец, служащий источником данных для преобразования."
+                          name="SourceInputColumnLineageID">#{Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника "OLE DB"].Columns[Email]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Указывает, используются ли в столбце более производительные, не зависящие от локалей процедуры синтаксического анализа."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Выходные данные ошибок преобразования данных"
+                  synchronousInputId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные ошибок преобразования данных].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Уточняющий запрос;Корпорация Майкрософт. Microsoft SQL Server. (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены. http://www.microsoft.com/sql/support;6"
+              description="Присоединяет дополнительные столбцы к потоку данных путем поиска значений в таблице. Пример: соединение со столбцом &quot;employee id&quot; таблицы employees позволяет получить значения &quot;hire date&quot; и &quot;employee name&quot;. Рекомендуется воспользоваться этим преобразованием, если таблица подстановки не помещается в памяти."
+              name="Убрали дубликаты телефонов"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Задает инструкцию SQL, которая формирует таблицу уточняющих запросов."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[PhoneNumbers]</property>
+                <property
+                  dataType="System.String"
+                  description="Задает инструкцию SQL, которая использует параметры для формирования таблицы уточняющих запросов."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[PhoneNumbers]) [refTable]
+where [refTable].[AccountID] = ? and [refTable].[PhoneNumber] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает тип соединения, используемого для доступа к эталонному набору данных."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает тип кэша таблицы уточняющих запросов."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает, как преобразование &quot;Уточняющий запрос&quot; обрабатывает строки без совпадающих элементов в эталонном наборе данных."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает долю кэша (в процентах), выделенную для строк без совпадающих элементов в эталонном наборе данных."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Максимальный объем памяти для кэша ссылок на 32-разрядной платформе."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Максимальный объем памяти для кэша ссылок на 64-разрядной платформе."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Указывает, следует ли ссылаться на метаданные в формате XML."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PhoneNumberID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="AccountID" dataType="DT_I8" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="StaffID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PhoneNumber" dataType="DT_WSTR" length="25" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Comment" dataType="DT_WSTR" length="256" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Задает список идентификаторов журнала обращений и преобразований, сопоставляемый с параметрами, которые использует инструкция SQL в свойстве SQLCommand. Элементы списка разделяются точками с запятой."
+                  name="ParameterMap">#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]};#{Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Указывает кодовую страницу столбца, используемую, когда недоступны сведения о кодовой странице из источника данных."
+                  name="DefaultCodePage">1251</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Определяет, должны ли повторяющиеся ключи в ссылочных данных обрабатываться как ошибки при использовании режима полного кэширования."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  connectionManagerRefId="Package.ConnectionManagers[WS82\SQL2017_DEV.Dispatcher]"
+                  description="Диспетчер соединений, используемый для доступа к данным уточняющих запросов."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+                  name="Ввод преобразования &quot;Уточняющий запрос&quot;">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_AccountID]"
+                      cachedDataType="i8"
+                      cachedName="n_AccountID"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_AccountID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Указывает в ссылочной таблице столбец, который соединен с данным столбцом."
+                          name="JoinToReferenceColumn">AccountID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Указывает в ссылочной таблице столбец, из которого копируется данный столбец."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;].Columns[n_PhoneNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="n_PhoneNumber"
+                      lineageId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных].Columns[n_PhoneNumber]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Указывает в ссылочной таблице столбец, который соединен с данным столбцом."
+                          name="JoinToReferenceColumn">PhoneNumber</property>
+                        <property
+                          dataType="System.Null"
+                          description="Указывает в ссылочной таблице столбец, из которого копируется данный столбец."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
+                  errorOrTruncationOperation="Уточняющий запрос"
+                  exclusionGroup="1"
+                  name="Вывод совпадений преобразования &quot;Уточняющий запрос&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Выход несовпадающих строк уточняющего запроса]"
+                  description="Вывод преобразования &quot;Уточняющий запрос&quot;, которое обрабатывает строки без совпадающих элементов в эталонном наборе данных. Используйте этот выход, если свойство NoMatchBehavior имеет значение &quot;Отправить строки без совпадающих элементов в выход несовпадающих строк&quot;."
+                  exclusionGroup="1"
+                  name="Выход несовпадающих строк уточняющего запроса"
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Вывод ошибок преобразования &quot;Уточняющий запрос&quot;"
+                  synchronousInputId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Вывод ошибок преобразования &quot;Уточняющий запрос&quot;].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[n_PhoneNumber not null]"
+              endId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+              name="n_PhoneNumber not null"
+              startId="Package\from Billing to Dispatcher\PhoneNumber is not null.Outputs[n_PhoneNumber not null]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[RowNumber 1]"
+              endId="Package\from Billing to Dispatcher\Обработка ЛС.Inputs[Ввод преобразования &quot;Уточняющий запрос&quot;]"
+              name="RowNumber 1"
+              startId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Outputs[RowNumber 1]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
+              endId="Package\from Billing to Dispatcher\Update Accounts.Inputs[Вход команды OLE DB]"
+              name="Вывод совпадений преобразования &quot;Уточняющий запрос&quot;"
+              startId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход источника &quot;OLE DB&quot;]"
+              endId="Package\from Billing to Dispatcher\Преобразование данных.Inputs[Входные данные преобразования данных]"
+              name="Выход источника &quot;OLE DB&quot;"
+              startId="Package\from Billing to Dispatcher\From Stack_Nebraska (2012).Outputs[Выход источника &quot;OLE DB&quot;]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 4]"
+              endId="Package\from Billing to Dispatcher\Выбираем первый ЛС.Inputs[Вход условного разбиения]"
+              name="Выход многоадресной рассылки 4"
+              startId="Package\from Billing to Dispatcher\Многоадресная рассылка.Outputs[Выход многоадресной рассылки 4]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 5]"
+              endId="Package\from Billing to Dispatcher\PhoneNumber is not null.Inputs[Вход условного разбиения]"
+              name="Выход многоадресной рассылки 5"
+              startId="Package\from Billing to Dispatcher\Многоадресная рассылка.Outputs[Выход многоадресной рассылки 5]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса]"
+              endId="Package\from Billing to Dispatcher\Insert Accounts.Inputs[Вход назначения &quot;OLE DB&quot;]"
+              name="Выход несовпадающих строк уточняющего запроса"
+              startId="Package\from Billing to Dispatcher\Обработка ЛС.Outputs[Выход несовпадающих строк уточняющего запроса]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса1]"
+              endId="Package\from Billing to Dispatcher\To PhoneNumbers.Inputs[Вход назначения &quot;OLE DB&quot;]"
+              name="Выход несовпадающих строк уточняющего запроса"
+              startId="Package\from Billing to Dispatcher\Убрали дубликаты телефонов.Outputs[Выход несовпадающих строк уточняющего запроса]" />
+            <path
+              refId="Package\from Billing to Dispatcher.Paths[Выходные данные преобразования данных]"
+              endId="Package\from Billing to Dispatcher\Многоадресная рассылка.Inputs[Многоадресная рассылка Вход 1]"
+              name="Выходные данные преобразования данных"
+              startId="Package\from Billing to Dispatcher\Преобразование данных.Outputs[Выходные данные преобразования данных]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--В данном разделе CDATA содержатся сведения о макете пакета. В данном разделе содержатся сведения о координатах (x,y), ширине и высоте.-->
+<!--В случае возникновения ошибки при редактировании этого раздела вручную его можно удалить. -->
+<!--Пакет можно загрузить обычным образом, но прежние сведения о макете будут утеряны, и конструктор автоматически перераспределит элементы в области конструктора.-->
+<Objects
+  Version="8">
+  <!--Все приведенные ниже узлы будут содержать свойства, не влияющие на поведение среды выполнения.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="198,42"
+          Id="Package\from Billing to Dispatcher"
+          TopLeft="89,30" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\from Billing to Dispatcher">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="203,42"
+          Id="Package\from Billing to Dispatcher\Многоадресная рассылка"
+          TopLeft="180,201" />
+        <NodeLayout
+          Size="166,42"
+          Id="Package\from Billing to Dispatcher\To PhoneNumbers"
+          TopLeft="498,524" />
+        <NodeLayout
+          Size="227,42"
+          Id="Package\from Billing to Dispatcher\Убрали дубликаты телефонов"
+          TopLeft="455,399" />
+        <NodeLayout
+          Size="148,42"
+          Id="Package\from Billing to Dispatcher\Обработка ЛС"
+          TopLeft="27,389" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\from Billing to Dispatcher\Выбираем первый ЛС"
+          TopLeft="30,295" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\from Billing to Dispatcher\PhoneNumber is not null"
+          TopLeft="246,296" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\from Billing to Dispatcher\Update Accounts"
+          TopLeft="277,542" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\from Billing to Dispatcher\Преобразование данных"
+          TopLeft="175,115" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\from Billing to Dispatcher\Insert Accounts"
+          TopLeft="13.5,508.5" />
+        <NodeLayout
+          Size="178,55"
+          Id="Package\from Billing to Dispatcher\From Stack_Nebraska (2012)"
+          TopLeft="96,23" />
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выходные данные преобразования данных]"
+          TopLeft="278.25,157">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса]"
+          TopLeft="77.6666666666667,431">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="11.8333333333333,77.5"
+              Start="0,0"
+              End="11.8333333333333,70">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.4973262032086" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.4973262032086"
+                    Point2="0,31.4973262032086"
+                    Point3="4,31.4973262032086" />
+                  <mssgle:LineSegment
+                    End="7.83333333333334,31.4973262032086" />
+                  <mssgle:CubicBezierSegment
+                    Point1="7.83333333333334,31.4973262032086"
+                    Point2="11.8333333333333,31.4973262032086"
+                    Point3="11.8333333333333,35.4973262032086" />
+                  <mssgle:LineSegment
+                    End="11.8333333333333,70" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-113.681692708333,36.4973262032086,239.19671875,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 5]"
+          TopLeft="314,243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="29.5,53"
+              Start="0,0"
+              End="29.5,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.4486803519062" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.4486803519062"
+                    Point2="0,21.4486803519062"
+                    Point3="4,21.4486803519062" />
+                  <mssgle:LineSegment
+                    End="25.5,21.4486803519062" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.5,21.4486803519062"
+                    Point2="29.5,21.4486803519062"
+                    Point3="29.5,25.4486803519062" />
+                  <mssgle:LineSegment
+                    End="29.5,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход многоадресной рассылки 4]"
+          TopLeft="249,243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-126.5,52"
+              Start="0,0"
+              End="-126.5,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.0439882697947" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.0439882697947"
+                    Point2="0,21.0439882697947"
+                    Point3="-4,21.0439882697947" />
+                  <mssgle:LineSegment
+                    End="-122.5,21.0439882697947" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-122.5,21.0439882697947"
+                    Point2="-126.5,21.0439882697947"
+                    Point3="-126.5,25.0439882697947" />
+                  <mssgle:LineSegment
+                    End="-126.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход источника &quot;OLE DB&quot;]"
+          TopLeft="185,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90,37"
+              Start="0,0"
+              End="90,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.5"
+                    Point2="0,18.5"
+                    Point3="4,18.5" />
+                  <mssgle:LineSegment
+                    End="86,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86,18.5"
+                    Point2="90,18.5"
+                    Point3="90,22.5" />
+                  <mssgle:LineSegment
+                    End="90,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Вывод совпадений преобразования &quot;Уточняющий запрос&quot;]"
+          TopLeft="124.333333333333,431">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="231.666666666667,111"
+              Start="0,0"
+              End="231.666666666667,103.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1122994652406" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.1122994652406"
+                    Point2="0,45.1122994652406"
+                    Point3="4,45.1122994652406" />
+                  <mssgle:LineSegment
+                    End="227.666666666667,45.1122994652406" />
+                  <mssgle:CubicBezierSegment
+                    Point1="227.666666666667,45.1122994652406"
+                    Point2="231.666666666667,45.1122994652406"
+                    Point3="231.666666666667,49.1122994652406" />
+                  <mssgle:LineSegment
+                    End="231.666666666667,103.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-18.8565299479167,50.1122994652406,269.3797265625,12"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[RowNumber 1]"
+          TopLeft="122.5,337">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-21.5,52"
+              Start="0,0"
+              End="-21.5,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-17.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-17.5,26"
+                    Point2="-21.5,26"
+                    Point3="-21.5,30" />
+                  <mssgle:LineSegment
+                    End="-21.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-42.32056640625,31,63.1411328125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[n_PhoneNumber not null]"
+          TopLeft="343.5,338">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="225,61"
+              Start="0,0"
+              End="225,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5"
+                    Point2="0,30.5"
+                    Point3="4,30.5" />
+                  <mssgle:LineSegment
+                    End="221,30.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="221,30.5"
+                    Point2="225,30.5"
+                    Point3="225,34.5" />
+                  <mssgle:LineSegment
+                    End="225,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="57.28125,35.5,110.4375,11.0625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\from Billing to Dispatcher.Paths[Выход несовпадающих строк уточняющего запроса1]"
+          TopLeft="568.5,441">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="12.5,83"
+              Start="0,0"
+              End="12.5,75.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.5"
+                    Point2="0,41.5"
+                    Point3="4,41.5" />
+                  <mssgle:LineSegment
+                    End="8.5,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="8.5,41.5"
+                    Point2="12.5,41.5"
+                    Point3="12.5,45.5" />
+                  <mssgle:LineSegment
+                    End="12.5,75.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-113.348359375,46.5,239.19671875,11.2822265625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\Убрали дубликаты телефонов">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[PhoneNumbers]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\Insert Accounts">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\Обработка ЛС">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Accounts]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\From Stack_Nebraska (2012)">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\from Billing to Dispatcher\To PhoneNumbers">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
